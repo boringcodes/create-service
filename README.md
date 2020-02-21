@@ -1,2 +1,2 @@
 # create-service
-Micro Service Generator
+Boring API Service Generator
