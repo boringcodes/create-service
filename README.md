@@ -26,3 +26,50 @@
     </a>
   </div>
 </div>
+
+## About
+
+Boring NPM Service Generator - @boringapp
+
+## Install
+
+Make sure `yeoman` is installed:
+
+```sh
+$ yarn global add yo
+```
+
+Then install the generator
+
+```sh
+$ yarn global add generator-create-service
+```
+
+## Usage
+
+With [yo](https://github.com/yeoman/yo):
+
+```sh
+$ yo create-service
+```
+
+This scaffolds out:
+```
+├── Dockerfile
+├── README.md
+├── package.json
+└── src
+    ├── app.ts
+    ├── components
+    │   ├── things
+    │   │   ├── constants.ts
+    │   │   ├── controller.ts
+    │   │   ├── index.ts
+    │   │   ├── middleware.ts
+    │   │   ├── model.ts
+    │   │   ├── repository.ts
+    │   │   └── type.ts
+    │   └── types.ts
+    ├── index.ts
+    └── routes.ts
+```

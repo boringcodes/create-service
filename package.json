@@ -1,0 +1,23 @@
+{
+  "name": "generator-create-service",
+  "version": "1.0.0",
+  "description": "Boring NPM Service Generator",
+  "main": "generators/index.js",
+  "repository": "git@github.com:boringcodes/create-service.git",
+  "author": "Khang Huynh <khanghuynh92@gmail.com>",
+  "repository": "https://github.com/boringcodes/create-service.git",
+  "bugs": "https://github.com/boringcodes/create-service/issues",
+  "license": "MIT",
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "create-package"
+  ],
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "yeoman-generator": "^4.5.0",
+    "yosay": "^2.0.2"
+  }
+}
