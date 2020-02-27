@@ -27,10 +27,6 @@
   </div>
 </div>
 
-## About
-
-Boring NPM Service Generator - @boringapp
-
 ## Install
 
 Make sure `yeoman` is installed:
@@ -42,7 +38,7 @@ $ yarn global add yo
 Then install the generator
 
 ```sh
-$ yarn global add generator-create-service
+$ yarn global add @boringcodes/create-service
 ```
 
 ## Usage
