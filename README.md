@@ -69,3 +69,17 @@ This scaffolds out:
     ├── index.ts
     └── routes.ts
 ```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## Authors
+
+[BoringCodes](https://github.com/boringcodes)
+
+## License
+
+[MIT](https://github.com/boringcodes/create-service/blob/master/LICENSE)
