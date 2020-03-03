@@ -1,7 +1,7 @@
 {
   "name": "@boringcodes/create-service",
   "version": "0.0.0",
-  "description": "Boring NPM Service Generator",
+  "description": "Boring Express Microservice Generator",
   "main": "generators/app/index.js",
   "repository": "git@github.com:boringcodes/create-service.git",
   "author": "BoringCodes <hi@boringcodes.com> (https://boringcodes.com)",
@@ -20,7 +20,7 @@
   },
   "keywords": [
     "yeoman-generator",
-    "create-package"
+    "create-service"
   ],
   "dependencies": {
     "chalk": "^3.0.0",

@@ -1,6 +1,6 @@
 <div align="center">
   <h1>create-service</h1>
-  <p>Boring Micro Service Generator</p>
+  <p>Boring Express Microservice Generator</p>
   
   <div>
     <a href="https://github.com/boringcodes/create-service" aria-label="Commitizen Friendly">
