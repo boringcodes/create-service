@@ -15,19 +15,19 @@ module.exports = class extends Generator {
       {
         type: "input",
         name: "elementName",
-        message: "What is the name of your package?",
-        default: "my-awesome-package"
+        message: "What is the name of your service?",
+        default: "my-awesome-service"
       },
       {
         type: "input",
         name: "elementDescription",
-        message: "Give us some small description of your package",
+        message: "Give us some small description of your service",
         default: ""
       },
       {
         type: "input",
         name: "elementAuthor",
-        message: "Who is the author of this package?",
+        message: "Who is the author of this service?",
         default: ""
       },
     ];
@@ -45,6 +45,11 @@ module.exports = class extends Generator {
       ],
       this.destinationPath(),
       this.props,
+    );
+
+    this.fs.copyTpl(
+      this.templatePath('.env.example'),
+      this.destinationPath('.env.example')
     );
   }
 
