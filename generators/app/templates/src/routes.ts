@@ -1,9 +1,9 @@
 import { Router } from 'express';
 
-import { RoutesProps } from './components/types';
+import { Routes } from './components/types';
 import things from './components/things';
 
-const routes = (props: RoutesProps) => {
+const routes = (props: Routes) => {
   const router = Router();
 
   // register components
@@ -13,4 +13,3 @@ const routes = (props: RoutesProps) => {
 };
 
 export default routes;
-export { RoutesProps };

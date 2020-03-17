@@ -1,5 +1,5 @@
-type RoutesProps = {
+type Routes = {
   readonly dev: boolean,
 };
 
-export { RoutesProps };
+export { Routes };

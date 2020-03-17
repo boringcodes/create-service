@@ -2,7 +2,7 @@ import express from 'express';
 import morgan from 'morgan';
 import bodyParser from 'body-parser';
 import { isDev } from '@boringcodes/utils/dist';
-import { handleNotFound, handleErrors } from '@boringcodes/utils/dist/express';
+import { health, handleNotFound, handleErrors } from '@boringcodes/utils/dist/express';
 
 import routes from './routes';
 
@@ -14,6 +14,7 @@ const dev = isDev();
 app.use(morgan(dev ? 'dev' : 'common'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(health());
 
 // plug routes
 app.use(routes({ dev }));

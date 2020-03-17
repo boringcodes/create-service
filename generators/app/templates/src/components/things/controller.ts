@@ -1,49 +1,43 @@
 import { Request as ExpressRequest, Response, NextFunction } from 'express';
 import { BAD_REQUEST, NOT_FOUND, INTERNAL_SERVER_ERROR } from 'http-status-codes';
-import { Thing } from './type';
-import { ListQuery } from '@boringcodes/utils/dist/express';
 import { HttpError } from '@boringcodes/utils/dist/error';
 
 import { NAME } from './constants';
 
 type Request = ExpressRequest & {
-  readonly myQuery: ListQuery,
-  readonly myBody: any,
-  readonly [NAME]: Thing,
+  readonly [NAME]: any,
 };
 
 const list = async (_: Request, res: Response, next: NextFunction) => {
   try {
-    // TODO get things list
-    // const { query, sort, skip, limit } = req.myQuery;
-    const thingsList: ReadonlyArray<any> = [];
+    // TODO: list things
+    const things = [];
 
-    res.send(thingsList);
+    res.send(things);
   } catch (err) {
-    next(new HttpError(INTERNAL_SERVER_ERROR, err));
-  }
-};
-
-const create = async (_: Request, res: Response, next: NextFunction) => {
-  try {
-    // TODO create thing
-    const thing = {};
-
-    res.send(thing);
-  } catch (err) {
-    next(new HttpError(INTERNAL_SERVER_ERROR, err));
+    next(new HttpError(err.code || INTERNAL_SERVER_ERROR, err));
   }
 };
 
 const count = async (_: Request, res: Response, next: NextFunction) => {
   try {
-    // TODO count things
-    // const { query } = req.myQuery;
+    // TODO: count things
     const count = 0;
 
     res.send({ count });
   } catch (err) {
-    next(new HttpError(INTERNAL_SERVER_ERROR, err));
+    next(new HttpError(err.code || INTERNAL_SERVER_ERROR, err));
+  }
+};
+
+const create = async (_: Request, res: Response, next: NextFunction) => {
+  try {
+    // TODO: create thing
+    const thing = {};
+
+    res.send(thing);
+  } catch (err) {
+    next(new HttpError(err.code || INTERNAL_SERVER_ERROR, err));
   }
 };
 
@@ -55,7 +49,7 @@ const getById = async (req: Request, _: Response, next: NextFunction) => {
   }
 
   try {
-    // TODO get thing
+    // TODO: get thing
     const thing = {};
 
     if (!thing) {
@@ -68,7 +62,7 @@ const getById = async (req: Request, _: Response, next: NextFunction) => {
 
     next();
   } catch (err) {
-    next(new HttpError(INTERNAL_SERVER_ERROR, err));
+    next(new HttpError(err.code || INTERNAL_SERVER_ERROR, err));
   }
 };
 
@@ -78,9 +72,10 @@ const get = (req: Request, res: Response) => {
 
 const update = async (req: Request, res: Response, next: NextFunction) => {
   try {
-    // TODO update thing
+    // TODO: update thing
+    const thing = req[NAME];
 
-    res.send(req[NAME]);
+    res.send(thing);
   } catch (err) {
     next(err);
   }
@@ -88,11 +83,12 @@ const update = async (req: Request, res: Response, next: NextFunction) => {
 
 const del = async (req: Request, res: Response, next: NextFunction) => {
   try {
-    // TODO delete thing
+    // TODO: delete thing
+    const thing = req[NAME];
 
-    res.send(req[NAME]);
+    res.send(thing);
   } catch (err) {
-    next(new HttpError(INTERNAL_SERVER_ERROR, err));
+    next(new HttpError(err.code || INTERNAL_SERVER_ERROR, err));
   }
 };
 
