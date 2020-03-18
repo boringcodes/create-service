@@ -1,0 +1,33 @@
+{
+  "name": "@boringcodes/create-service",
+  "version": "0.0.0",
+  "description": "Boring Express Microservice Generator",
+  "homepage": "https://github.com/boringcodes/create-service",
+  "bugs": "https://github.com/boringcodes/create-service/issues",
+  "license": "MIT",
+  "author": "BoringCodes <hi@boringcodes.com> (https://boringcodes.com)",
+  "repository": "https://github.com/boringcodes/create-service.git",
+  "main": "generators/app/index.js",
+  "files": [
+    "generators"
+  ],
+  "scripts": {
+    "purge": "rm -rf node_modules",
+    "release": "standard-version",
+    "release:major": "yarn release --release-as major",
+    "release:minor": "yarn release --release-as minor",
+    "release:patch": "yarn release --release-as patch"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "create-service"
+  ],
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "yeoman-generator": "^4.5.0",
+    "yosay": "^2.0.2"
+  },
+  "devDependencies": {
+    "standard-version": "^7.1.0"
+  }
+}

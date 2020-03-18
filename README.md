@@ -26,3 +26,60 @@
     </a>
   </div>
 </div>
+
+## Install
+
+Make sure `yeoman` is installed:
+
+```sh
+$ yarn global add yo
+```
+
+Then install the generator
+
+```sh
+$ yarn global add @boringcodes/create-service
+```
+
+## Usage
+
+With [yo](https://github.com/yeoman/yo):
+
+```sh
+$ yo create-service
+```
+
+This scaffolds out:
+```
+├── Dockerfile
+├── README.md
+├── package.json
+└── src
+    ├── app.ts
+    ├── components
+    │   ├── things
+    │   │   ├── constants.ts
+    │   │   ├── controller.ts
+    │   │   ├── index.ts
+    │   │   ├── middleware.ts
+    │   │   ├── model.ts
+    │   │   ├── repository.ts
+    │   │   └── type.ts
+    │   └── types.ts
+    ├── index.ts
+    └── routes.ts
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## Authors
+
+[BoringCodes](https://github.com/boringcodes)
+
+## License
+
+[MIT](https://github.com/boringcodes/create-service/blob/master/LICENSE)
