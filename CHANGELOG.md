@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/boringcodes/create-service/compare/v0.1.0...v0.1.1) (2020-03-21)
+
+
+### Features
+
+* **template:** update source as @boringcodes/utils updated, replace ts type with interface & pretifier some files ([9388983](https://github.com/boringcodes/create-service/commit/93889834c7c192cfb0cc030ff6940d081543f93c))
+
 ## 0.1.0 (2020-03-18)
 
 
