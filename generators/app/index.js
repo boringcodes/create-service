@@ -1,34 +1,33 @@
 const Generator = require('yeoman-generator');
-const chalk = require("chalk");
-const yosay = require("yosay");
+const chalk = require('chalk');
+const yosay = require('yosay');
+
 const pkg = require('../../package.json');
 
 module.exports = class extends Generator {
   async prompting() {
     this.log(
-      yosay(
-        `Welcome to the astounding ${chalk.red(pkg.name)} generator!`
-      )
+      yosay(`Welcome to the astounding ${chalk.red(pkg.name)} generator!`),
     );
-    
+
     const prompts = [
       {
-        type: "input",
-        name: "elementName",
-        message: "What is the name of your service?",
-        default: "my-awesome-service"
+        type: 'input',
+        name: 'elementName',
+        message: 'What is the name of your service?',
+        default: 'my-awesome-service',
       },
       {
-        type: "input",
-        name: "elementDescription",
-        message: "Give us some small description of your service",
-        default: ""
+        type: 'input',
+        name: 'elementDescription',
+        message: 'Give us some small description of your service',
+        default: '',
       },
       {
-        type: "input",
-        name: "elementAuthor",
-        message: "Who is the author of this service?",
-        default: ""
+        type: 'input',
+        name: 'elementAuthor',
+        message: 'Who is the author of this service?',
+        default: '',
       },
     ];
 
@@ -40,20 +39,18 @@ module.exports = class extends Generator {
 
   writing() {
     this.fs.copyTpl(
-      [
-        this.templatePath('**'),
-      ],
+      [this.templatePath('**')],
       this.destinationPath(),
       this.props,
     );
 
     this.fs.copyTpl(
       this.templatePath('.env.example'),
-      this.destinationPath('.env.example')
+      this.destinationPath('.env.example'),
     );
   }
 
-  install () {
+  install() {
     this.installDependencies();
   }
 };
