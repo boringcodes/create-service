@@ -1,5 +1,5 @@
-type Routes = {
-  readonly dev: boolean,
-};
+interface Routes {
+  readonly dev: boolean;
+}
 
 export { Routes };

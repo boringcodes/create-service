@@ -1,11 +1,15 @@
 import { Request as ExpressRequest, Response, NextFunction } from 'express';
-import { BAD_REQUEST, NOT_FOUND, INTERNAL_SERVER_ERROR } from 'http-status-codes';
-import { HttpError } from '@boringcodes/utils/dist/error';
+import {
+  BAD_REQUEST,
+  NOT_FOUND,
+  INTERNAL_SERVER_ERROR,
+} from 'http-status-codes';
+import { HttpError } from '@boringcodes/utils/error';
 
 import { NAME } from './constants';
 
-type Request = ExpressRequest & {
-  readonly [NAME]: any,
+interface Request extends ExpressRequest {
+  readonly [NAME]: any;
 };
 
 const list = async (_: Request, res: Response, next: NextFunction) => {
@@ -92,12 +96,4 @@ const del = async (req: Request, res: Response, next: NextFunction) => {
   }
 };
 
-export {
-  list,
-  create,
-  count,
-  getById,
-  get,
-  update,
-  del,
-};
+export { list, create, count, getById, get, update, del };

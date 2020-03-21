@@ -1,7 +1,4 @@
 const NAME = 'thing';
 const PLURAL_NAME = 'things';
 
-export {
-  NAME,
-  PLURAL_NAME,
-};
+export { NAME, PLURAL_NAME };

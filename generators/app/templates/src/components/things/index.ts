@@ -1,8 +1,8 @@
 import { Router } from 'express';
 
+import { Routes } from '../types';
 import { PLURAL_NAME } from './constants';
 import { list, count, create, getById, get, update, del } from './controller';
-import { Routes } from '../types';
 
 const path = `/${PLURAL_NAME}`;
 
@@ -11,14 +11,17 @@ const routes = (_: Routes) => {
 
   router.param('id', getById);
 
-  router.route('/')
+  router
+    .route('/')
     .get(list)
     .post(create);
 
-  router.route('/count')
+  router
+    .route('/count')
     .get(count);
 
-  router.route('/:id')
+  router
+    .route('/:id')
     .get(get)
     .put(update)
     .delete(del);

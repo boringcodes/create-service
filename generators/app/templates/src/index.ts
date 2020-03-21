@@ -1,5 +1,5 @@
-import errorHandler from '@boringcodes/utils/dist/errorHandler';
-import logger from '@boringcodes/utils/dist/logger';
+import errorHandler from '@boringcodes/utils/errorHandler';
+import logger from '@boringcodes/utils/logger';
 
 import app from './app';
 
