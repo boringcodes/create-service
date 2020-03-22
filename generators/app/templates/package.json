@@ -1,12 +1,11 @@
 {
   "name": "<%= elementName %>",
-  "description": "<%= elementDescription %>",
   "version": "0.0.0",
-  "private": true,
-  "license": "MIT",
-  "author": "<%= elementAuthor %>",
-  "repository": "",
-  "bugs": "",
+  "description": "<%= elementDescription %>",
+  "homepage": "<%= elementHomepageUrl %>",
+  "bugs": "<%= elementBugsUrl %>",
+  "author": "<%- elementAuthor %>",
+  "repository": "<%= elementRepositoryUrl %>",
   "scripts": {
     "clean": "rm -rf build",
     "purge": "rm -rf node_modules",
@@ -31,7 +30,6 @@
   "devDependencies": {
     "@types/express": "^4.16.0",
     "@types/morgan": "^1.7.35",
-    "@types/qs": "^6.5.1",
     "@types/yup": "^0.26.3",
     "husky": "^1.2.1",
     "standard-version": "^4.4.0",

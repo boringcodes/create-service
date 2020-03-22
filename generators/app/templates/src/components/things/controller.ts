@@ -10,7 +10,7 @@ import { NAME } from './constants';
 
 interface Request extends ExpressRequest {
   readonly [NAME]: any;
-};
+}
 
 const list = async (_: Request, res: Response, next: NextFunction) => {
   try {
