@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/boringcodes/create-service/compare/v1.0.1...v1.1.0) (2020-03-23)
+
+
+### Features
+
+* **close #7:** add package.json engines node information ([#8](https://github.com/boringcodes/create-service/issues/8)) ([18a31d5](https://github.com/boringcodes/create-service/commit/18a31d5b45aa697f58c1586ae2fdad63d6f9f344)), closes [#7](https://github.com/boringcodes/create-service/issues/7)
+* **close #9:** Dockerfile & .dockerignore supports ([#10](https://github.com/boringcodes/create-service/issues/10)) ([93af323](https://github.com/boringcodes/create-service/commit/93af32392c49c3d625022058f8dad1da50c88622)), closes [#9](https://github.com/boringcodes/create-service/issues/9)
+
 ### [1.0.1](https://github.com/boringcodes/create-service/compare/v1.0.0...v1.0.1) (2020-03-23)
 
 ## [1.0.0](https://github.com/boringcodes/create-service/compare/v0.1.1...v1.0.0) (2020-03-22)
