@@ -6,9 +6,7 @@ const pkg = require('../../package.json');
 
 module.exports = class extends Generator {
   async prompting() {
-    this.log(
-      yosay(`Welcome to the ${chalk.red(pkg.name)} generator!`),
-    );
+    this.log(yosay(`Welcome to the ${chalk.red(pkg.name)} generator!`));
 
     const gitName = this.user.git.name() || 'organization';
     const gitEmail = this.user.git.email() || 'hi@domain.com';
@@ -64,12 +62,21 @@ module.exports = class extends Generator {
         message: 'Supported Node version?',
         default: 12,
       },
+      {
+        type: 'confirm',
+        name: 'elementGenerateNewComponent',
+        message: 'Do you want to generate a new component?',
+        default: true,
+      },
     ];
 
-    return this.prompt(prompts).then(props => {
-      // To access props later use this.props.someAnswer;
-      this.props = props;
-    });
+    const props = await this.prompt(prompts);
+
+    if (props.elementGenerateNewComponent) {
+      this.composeWith(require.resolve('generator-create-service-component'));
+    }
+
+    this.props = props;
   }
 
   writing() {
