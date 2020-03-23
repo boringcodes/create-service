@@ -18,7 +18,7 @@
     "build": "backpack build",
     "lint": "tslint --project ./node_modules/@boringcodes/backpack/config/tsconfig.json --config tslint.json",
     "start": "NODE_ENV=production node build/index.js",
-    "release": "standard-version",
+    "release": "standard-version --no-verify",
     "release:major": "yarn release --release-as major",
     "release:minor": "yarn release --release-as minor",
     "release:patch": "yarn release --release-as patch"
