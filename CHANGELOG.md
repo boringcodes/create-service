@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/boringcodes/create-service/compare/v1.1.1...v1.2.0) (2020-03-23)
+
+
+### Features
+
+* **close #11:** integrate @boringcodes/create-service-component ([#12](https://github.com/boringcodes/create-service/issues/12)) ([cae819a](https://github.com/boringcodes/create-service/commit/cae819a318ac735b8deb15a99fa25806f52f064d)), closes [#11](https://github.com/boringcodes/create-service/issues/11)
+* **close #13:** support nvm ([#14](https://github.com/boringcodes/create-service/issues/14)) ([92be34b](https://github.com/boringcodes/create-service/commit/92be34bc899039a2abf4fcef6f73139874b0de97)), closes [#13](https://github.com/boringcodes/create-service/issues/13)
+
 ### [1.1.1](https://github.com/boringcodes/create-service/compare/v1.1.0...v1.1.1) (2020-03-23)
 
 ## [1.1.0](https://github.com/boringcodes/create-service/compare/v1.0.1...v1.1.0) (2020-03-23)
