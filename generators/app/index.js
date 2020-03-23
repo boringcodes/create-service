@@ -7,7 +7,7 @@ const pkg = require('../../package.json');
 module.exports = class extends Generator {
   async prompting() {
     this.log(
-      yosay(`Welcome to the astounding ${chalk.red(pkg.name)} generator!`),
+      yosay(`Welcome to the ${chalk.red(pkg.name)} generator!`),
     );
 
     const gitName = this.user.git.name() || 'organization';
@@ -18,44 +18,44 @@ module.exports = class extends Generator {
 
         return username;
       } catch (err) {
-        return 'organization';
+        return gitName;
       }
     })();
     const prompts = [
       {
         type: 'input',
         name: 'elementName',
-        message: 'What is the name of your service?',
+        message: 'Name of this service?',
         default: this.appname,
       },
       {
         type: 'input',
         name: 'elementDescription',
-        message: 'Description of your service?',
+        message: 'Description?',
         default: 'My awesome service',
       },
       {
         type: 'input',
-        name: 'elementHomepageUrl',
-        message: 'Homepage URL?',
+        name: 'elementHomepage',
+        message: 'Homepage?',
         default: `https://github.com/${githubUsername}/${this.appname}`,
       },
       {
         type: 'input',
-        name: 'elementBugsUrl',
-        message: 'Bugs tracking URL?',
+        name: 'elementBugs',
+        message: 'Bugs tracker?',
         default: `https://github.com/${githubUsername}/${this.appname}/issues`,
       },
       {
         type: 'input',
         name: 'elementAuthor',
-        message: 'Author of this service?',
+        message: 'Author?',
         default: `${gitName} \<${gitEmail}\>`,
       },
       {
         type: 'input',
-        name: 'elementRepositoryUrl',
-        message: 'Repository URL?',
+        name: 'elementRepository',
+        message: 'Repository?',
         default: `https://github.com/${githubUsername}/${this.appname}.git`,
       },
     ];
