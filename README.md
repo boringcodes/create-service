@@ -70,8 +70,10 @@ This scaffolds out:
 │   ├── app.ts
 │   ├── index.ts
 │   └── routes.ts
+├── .dockerignore
 ├── .env.example
 ├── .huskyrc
+├── Dockerfile
 ├── package.json
 └── tslint.json
 ```
