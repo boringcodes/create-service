@@ -7,6 +7,9 @@
   "license": "MIT",
   "author": "<%- elementAuthor %>",
   "repository": "<%= elementRepository %>",
+  "engines": {
+    "node": ">=<%= elementNodeVersion %>"
+  },
   "scripts": {
     "clean": "rm -rf build",
     "purge": "rm -rf node_modules",

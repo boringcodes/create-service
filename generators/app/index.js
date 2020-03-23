@@ -58,6 +58,12 @@ module.exports = class extends Generator {
         message: 'Repository?',
         default: `https://github.com/${githubUsername}/${this.appname}.git`,
       },
+      {
+        type: 'input',
+        name: 'elementNodeVersion',
+        message: 'Supported Node version?',
+        default: 12,
+      },
     ];
 
     return this.prompt(prompts).then(props => {
