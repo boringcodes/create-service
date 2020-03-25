@@ -2,7 +2,11 @@ import express from 'express';
 import morgan from 'morgan';
 import bodyParser from 'body-parser';
 import { isDev } from '@boringcodes/utils';
-import { health, handleNotFound, handleErrors } from '@boringcodes/utils/express';
+import {
+  health,
+  handleNotFound,
+  handleErrors,
+} from '@boringcodes/utils/express';
 
 import routes from './routes';
 
