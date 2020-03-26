@@ -23,7 +23,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@boringcodes/prettier-config@^1.0.0":
+"@boringcodes/prettier-config@*":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@boringcodes/prettier-config/-/prettier-config-1.0.0.tgz#94ebeda4fec2d155ad957a0e47d3ed492400b91b"
   integrity sha512-P9Ymg/8x1PiIAIysHXZ5fOV0J+H5RxGhcAKNjrn8uyncPratIfzbJ0rKTYlgpjuMcGbFM7U+E4tdCVnOnYk/SA==
@@ -1020,9 +1020,9 @@ fs.realpath@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
 
 generator-create-service-component@*:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/generator-create-service-component/-/generator-create-service-component-1.0.0.tgz#d32d6474bfed13b8b21d7e046bcc057fef12bc83"
-  integrity sha512-olFjcBF8O92W5MiY1H/vKOTq8QUaASES2AuACUFxukcq78azomiztnYliWCZPSqWkDBJv+nOoHMsz4TQy0xe+A==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/generator-create-service-component/-/generator-create-service-component-1.1.0.tgz#063de42043cdaed72ed98543c327c0072e255b99"
+  integrity sha512-cP4TXPk6WIKdsaJZ00M6DG+UqzkSpgzU/SLWe0AI7UarrWt+4xmelKrntFsfulJV3aP3OUhipbzTmAYTaSNI4w==
   dependencies:
     chalk "^3.0.0"
     change-case "^4.1.1"
