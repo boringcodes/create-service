@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.2](https://github.com/boringcodes/create-service/compare/v1.3.1...v1.3.2) (2020-03-26)
+
+
+### Features
+
+* **generator:** add change-case to paramCase the input appname ([f34ddac](https://github.com/boringcodes/create-service/commit/f34ddacb73ee2714659427d8c18fa2be7955fac2))
+
 ### [1.3.1](https://github.com/boringcodes/create-service/compare/v1.3.0...v1.3.1) (2020-03-26)
 
 
