@@ -1,6 +1,7 @@
 const Generator = require('yeoman-generator');
 const chalk = require('chalk');
 const yosay = require('yosay');
+const changeCase = require('change-case');
 
 const pkg = require('../../package.json');
 
@@ -8,6 +9,7 @@ module.exports = class extends Generator {
   async prompting() {
     this.log(yosay(`Welcome to the ${chalk.red(pkg.name)} generator!`));
 
+    const appName = changeCase.paramCase(this.appname);
     const gitName = this.user.git.name() || 'organization';
     const gitEmail = this.user.git.email() || 'hi@domain.com';
     const githubUsername = await (async () => {
@@ -24,7 +26,7 @@ module.exports = class extends Generator {
         type: 'input',
         name: 'elementName',
         message: 'Name of this service?',
-        default: this.appname,
+        default: appName,
       },
       {
         type: 'input',
@@ -36,13 +38,13 @@ module.exports = class extends Generator {
         type: 'input',
         name: 'elementHomepage',
         message: 'Homepage?',
-        default: `https://github.com/${githubUsername}/${this.appname}`,
+        default: `https://github.com/${githubUsername}/${appName}`,
       },
       {
         type: 'input',
         name: 'elementBugs',
         message: 'Bugs tracker?',
-        default: `https://github.com/${githubUsername}/${this.appname}/issues`,
+        default: `https://github.com/${githubUsername}/${appName}/issues`,
       },
       {
         type: 'input',
@@ -54,7 +56,7 @@ module.exports = class extends Generator {
         type: 'input',
         name: 'elementRepository',
         message: 'Repository?',
-        default: `https://github.com/${githubUsername}/${this.appname}.git`,
+        default: `https://github.com/${githubUsername}/${appName}.git`,
       },
       {
         type: 'input',
