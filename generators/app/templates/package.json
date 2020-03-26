@@ -8,7 +8,7 @@
   "author": "<%- elementAuthor %>",
   "repository": "https://github.com/<%= elementOrganizationName %>/<%= elementName %>.git",
   "engines": {
-    "node": ">=<%= elementNodeVersion %>"
+    "node": "<%= elementNodeVersion %>"
   },
   "scripts": {
     "dev": "backpack dev",
