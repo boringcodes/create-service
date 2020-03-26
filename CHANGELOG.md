@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/boringcodes/create-service/compare/v1.4.0...v1.5.0) (2020-03-26)
+
+
+### Features
+
+* **generator:** remove new component generation question ([90428a9](https://github.com/boringcodes/create-service/commit/90428a9930c9c881c705a2666be9a66bb9576aa1))
+
 ## [1.4.0](https://github.com/boringcodes/create-service/compare/v1.3.2...v1.4.0) (2020-03-26)
 
 
