@@ -2,11 +2,11 @@
   "name": "<%= elementName %>",
   "version": "0.0.0",
   "description": "<%= elementDescription %>",
-  "homepage": "<%= elementHomepage %>",
-  "bugs": "<%= elementBugs %>",
+  "homepage": "https://github.com/<%= elementOrganizationName %>/<%= elementName %>",
+  "bugs": "https://github.com/<%= elementOrganizationName %>/<%= elementName %>/issues",
   "license": "MIT",
   "author": "<%- elementAuthor %>",
-  "repository": "<%= elementRepository %>",
+  "repository": "https://github.com/<%= elementOrganizationName %>/<%= elementName %>.git",
   "engines": {
     "node": ">=<%= elementNodeVersion %>"
   },
