@@ -1019,17 +1019,6 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
 
-generator-create-service-component@*:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/generator-create-service-component/-/generator-create-service-component-1.1.0.tgz#063de42043cdaed72ed98543c327c0072e255b99"
-  integrity sha512-cP4TXPk6WIKdsaJZ00M6DG+UqzkSpgzU/SLWe0AI7UarrWt+4xmelKrntFsfulJV3aP3OUhipbzTmAYTaSNI4w==
-  dependencies:
-    chalk "^3.0.0"
-    change-case "^4.1.1"
-    pluralize "^8.0.0"
-    yeoman-generator "^4.5.0"
-    yosay "^2.0.2"
-
 get-caller-file@^2.0.1:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
@@ -2155,11 +2144,6 @@ please-upgrade-node@^3.2.0:
   integrity sha512-gQR3WpIgNIKwBMVLkpMUeR3e1/E1y42bqDQZfql+kDeXd8COYfM8PQA4X6y7a8u9Ua9FHmsrrmirW2vHs45hWg==
   dependencies:
     semver-compare "^1.0.0"
-
-pluralize@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-8.0.0.tgz#1a6fa16a38d12a1901e0320fa017051c539ce3b1"
-  integrity sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==
 
 posix-character-classes@^0.1.0:
   version "0.1.1"

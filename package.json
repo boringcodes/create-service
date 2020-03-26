@@ -26,7 +26,6 @@
   ],
   "dependencies": {
     "chalk": "^3.0.0",
-    "generator-create-service-component": "*",
     "yeoman-generator": "^4.5.0",
     "yosay": "^2.0.2"
   },

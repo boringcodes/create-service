@@ -53,18 +53,9 @@ module.exports = class extends Generator {
         message: 'Supported Node version?',
         default: 12,
       },
-      {
-        type: 'confirm',
-        name: 'elementGenerateNewComponent',
-        message: 'Do you want to generate a new component?',
-        default: true,
-      },
     ];
 
     const props = await this.prompt(prompts);
-    if (props.elementGenerateNewComponent) {
-      this.composeWith(require.resolve('generator-create-service-component'));
-    }
 
     this.props = {
       ...props,
