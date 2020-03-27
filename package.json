@@ -13,8 +13,9 @@
   ],
   "scripts": {
     "purge": "rm -rf node_modules",
-    "format": "prettier --write \"**/*.*(json|js|ts|yml|md)\"",
-    "format:check": "prettier --check \"**/*.*(json|js|ts|yml|md)\"",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "format:stage": "pretty-quick --staged",
     "release": "standard-version --no-verify",
     "release:major": "yarn release --release-as major",
     "release:minor": "yarn release --release-as minor",

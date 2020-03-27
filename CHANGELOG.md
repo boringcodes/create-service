@@ -4,40 +4,35 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [1.5.0](https://github.com/boringcodes/create-service/compare/v1.4.0...v1.5.0) (2020-03-26)
 
-
 ### Features
 
-* **generator:** remove new component generation question ([90428a9](https://github.com/boringcodes/create-service/commit/90428a9930c9c881c705a2666be9a66bb9576aa1))
+- **generator:** remove new component generation question ([90428a9](https://github.com/boringcodes/create-service/commit/90428a9930c9c881c705a2666be9a66bb9576aa1))
 
 ## [1.4.0](https://github.com/boringcodes/create-service/compare/v1.3.2...v1.4.0) (2020-03-26)
 
-
 ### Features
 
-* **generator:** reduce questions to 6 by asking org instead of homepage, bugs & repository urls ([a2dc47c](https://github.com/boringcodes/create-service/commit/a2dc47c1a77eb18cc5bd8000dbecca4db31240ca))
-* **template:** update package.json engines node to use exactly input node verion ([92bf472](https://github.com/boringcodes/create-service/commit/92bf472f243f5cddb75e85f48d6ed8022a426b15))
+- **generator:** reduce questions to 6 by asking org instead of homepage, bugs & repository urls ([a2dc47c](https://github.com/boringcodes/create-service/commit/a2dc47c1a77eb18cc5bd8000dbecca4db31240ca))
+- **template:** update package.json engines node to use exactly input node verion ([92bf472](https://github.com/boringcodes/create-service/commit/92bf472f243f5cddb75e85f48d6ed8022a426b15))
 
 ### [1.3.2](https://github.com/boringcodes/create-service/compare/v1.3.1...v1.3.2) (2020-03-26)
 
-
 ### Features
 
-* **generator:** add change-case to paramCase the input appname ([f34ddac](https://github.com/boringcodes/create-service/commit/f34ddacb73ee2714659427d8c18fa2be7955fac2))
+- **generator:** add change-case to paramCase the input appname ([f34ddac](https://github.com/boringcodes/create-service/commit/f34ddacb73ee2714659427d8c18fa2be7955fac2))
 
 ### [1.3.1](https://github.com/boringcodes/create-service/compare/v1.3.0...v1.3.1) (2020-03-26)
 
-
 ### Features
 
-* **template:** update tslint.json to exclude build instead of dist ([858b5c0](https://github.com/boringcodes/create-service/commit/858b5c0954307d5d69dd0fc8183043c54b79e92d))
+- **template:** update tslint.json to exclude build instead of dist ([858b5c0](https://github.com/boringcodes/create-service/commit/858b5c0954307d5d69dd0fc8183043c54b79e92d))
 
 ## [1.3.0](https://github.com/boringcodes/create-service/compare/v1.2.0...v1.3.0) (2020-03-25)
 
-
 ### Features
 
-* **package:** add prettier & husky ([5b585e7](https://github.com/boringcodes/create-service/commit/5b585e7de587d76092cf34ce76f998551dfb6d68))
-* **template:** add prettier & husky ([22b3f37](https://github.com/boringcodes/create-service/commit/22b3f379ac6cd38539fc47bbecf4fd26e0fc15bb))
+- **package:** add prettier & husky ([5b585e7](https://github.com/boringcodes/create-service/commit/5b585e7de587d76092cf34ce76f998551dfb6d68))
+- **template:** add prettier & husky ([22b3f37](https://github.com/boringcodes/create-service/commit/22b3f379ac6cd38539fc47bbecf4fd26e0fc15bb))
 
 ## [1.2.0](https://github.com/boringcodes/create-service/compare/v1.1.1...v1.2.0) (2020-03-23)
 
