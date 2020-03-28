@@ -31,7 +31,7 @@
     "yosay": "^2.0.2"
   },
   "devDependencies": {
-    "@boringcodes/prettier-config": "*",
+    "@boringcodes/prettier-config": "^1.0.0",
     "change-case": "^4.1.1",
     "husky": "^4.2.3",
     "prettier": "^2.0.2",
