@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/boringcodes/create-service/compare/v1.5.0...v1.6.0) (2020-03-28)
+
+
+### Features
+
+* **template:** migrate tslint to eslint using [@typescript-eslint](https://github.com/typescript-eslint) & @boringcodes/eslint-config-typescript ([5477b03](https://github.com/boringcodes/create-service/commit/5477b03d3b291e5b1b738bf1c5099eb085cc552f))
+
 ## [1.5.0](https://github.com/boringcodes/create-service/compare/v1.4.0...v1.5.0) (2020-03-26)
 
 ### Features
