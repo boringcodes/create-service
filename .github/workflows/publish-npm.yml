@@ -17,4 +17,5 @@ jobs:
       - name: Publish package
         run: yarn publish --access public
         env:
+          # Create your own token at https://github.com/organization/repository/settings/secrets
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
