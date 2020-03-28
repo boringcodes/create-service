@@ -45,7 +45,7 @@ module.exports = class extends Generator {
         type: 'input',
         name: 'elementAuthor',
         message: 'Author?',
-        default: `${gitName} \<${gitEmail}\>`,
+        default: `${gitName} <${gitEmail}>`,
       },
       {
         type: 'input',

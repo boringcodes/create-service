@@ -1,5 +1,5 @@
 {
   "hooks": {
-    "pre-commit": "yarn format:stage",
+    "pre-commit": "yarn format:stage && yarn lint",
   }
 }
