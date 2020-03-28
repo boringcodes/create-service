@@ -13,10 +13,9 @@
   ],
   "scripts": {
     "purge": "rm -rf node_modules",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "format:stage": "pretty-quick --staged",
-    "lint": "eslint --ignore-path .gitignore --ignore-pattern templates .",
+    "format": "prettier --write --ignore-path .gitignore **/*.js",
+    "format:check": "prettier --check --ignore-path .gitignore **/*.js",
+    "lint": "eslint --ignore-path .gitignore --ignore-pattern templates **/*.js",
     "release": "standard-version --no-verify",
     "release:major": "yarn release --release-as major",
     "release:minor": "yarn release --release-as minor",
@@ -43,8 +42,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^4.2.3",
+    "lint-staged": "^10.0.9",
     "prettier": "^2.0.2",
-    "pretty-quick": "^2.0.1",
     "standard-version": "^7.1.0"
   }
 }
