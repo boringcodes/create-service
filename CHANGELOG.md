@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/boringcodes/create-service/compare/v1.6.0...v1.7.0) (2020-03-28)
+
+
+### Features
+
+* **template:** replace pretty-quick with lint-staged, add tsconfig.json, fix eslint errors on index file ([301336b](https://github.com/boringcodes/create-service/commit/301336bdb3f278f0ea693331bc8fc8cfeca66c49))
+
 ## [1.6.0](https://github.com/boringcodes/create-service/compare/v1.5.0...v1.6.0) (2020-03-28)
 
 

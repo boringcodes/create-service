@@ -1,6 +1,6 @@
 {
   "name": "generator-create-service",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "Boring Express Microservice Generator",
   "homepage": "https://github.com/boringcodes/create-service",
   "bugs": "https://github.com/boringcodes/create-service/issues",
