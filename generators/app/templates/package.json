@@ -17,9 +17,8 @@
     "start": "NODE_ENV=production node build/index.js",
     "purge": "rm -rf node_modules",
     "clean": "rm -rf build",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "format:stage": "pretty-quick --staged",
+    "format": "prettier --write --ignore-path .gitignore **/*.ts",
+    "format:check": "prettier --check --ignore-path .gitignore **/*.ts",
     "lint": "eslint --quiet --ignore-path .gitignore **/*.ts",
     "release": "standard-version --no-verify",
     "release:major": "yarn release --release-as major",
@@ -43,16 +42,17 @@
     "@types/yup": "^0.26.3",
     "@typescript-eslint/eslint-plugin": "^2.25.0",
     "@typescript-eslint/parser": "^2.25.0",
+    "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
-    "eslint-config-standard": "^14.1.1",
+    "eslint-config-standard-with-typescript": "^15.0.1",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "eslint": "^6.8.0",
     "husky": "^1.2.1",
+    "lint-staged": "^10.0.9",
     "prettier": "^2.0.2",
-    "pretty-quick": "^2.0.1",
-    "standard-version": "^4.4.0"
+    "standard-version": "^4.4.0",
+    "typescript": "^3.8.3"
   }
 }

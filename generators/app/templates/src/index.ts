@@ -4,12 +4,18 @@ import logger from '@boringcodes/utils/logger';
 import app from './app';
 
 // declare env vars
-const host = process.env.HOST || 'localhost';
-const port = +process.env.PORT || 9000;
+const host =
+  process.env.HOST !== null && process.env.HOST !== undefined
+    ? process.env.HOST
+    : 'localhost';
+const port =
+  process.env.PORT !== null && process.env.PORT !== undefined
+    ? +process.env.PORT
+    : 9000;
 
 // start app
 app.listen(port, host, (err: Error) => {
-  if (err) {
+  if (err !== null && err !== undefined) {
     throw err;
   }
 
