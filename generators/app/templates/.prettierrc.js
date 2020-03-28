@@ -1,3 +1,1 @@
-const config = require('@boringcodes/prettier-config');
-
-module.exports = config;
+module.exports = require('@boringcodes/prettier-config');

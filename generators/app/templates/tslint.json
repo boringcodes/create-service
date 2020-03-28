@@ -1,7 +1,0 @@
-{
-  "enable": true,
-  "extends": ["tslint-config-airbnb", "tslint-immutable", "tslint-sonarts"],
-  "linterOptions": {
-    "exclude": ["node_modules", "build", "**/*.js"]
-  }
-}

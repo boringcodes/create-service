@@ -5,6 +5,7 @@ import { Routes } from './components/types';
 // TODO: import components for registering to router
 // import things from './components/things';
 
+// eslint-disable-next-line
 const routes = (props: Routes) => {
   const router = Router();
 

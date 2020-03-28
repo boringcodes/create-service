@@ -1,6 +1,6 @@
 {
   "hooks": {
-    "pre-commit": "pretty-quick --staged --pattern \"**/*.*(json|js|ts|yml|md)\" && yarn lint",
+    "pre-commit": "yarn format:stage && yarn lint",
     "pre-push": "yarn build"
   }
 }
