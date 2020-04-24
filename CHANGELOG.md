@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/boringcodes/create-service/compare/v1.7.0...v1.8.0) (2020-04-24)
+
+
+### Features
+
+* **template:** remove unused .prettierignore ([ccda598](https://github.com/boringcodes/create-service/commit/ccda59860aa2e4cd7f7463c3576fc38c86273b61))
+
+
+### Bug Fixes
+
+* **deps:** mistaken putting change-case to devDeps ([12ca8d9](https://github.com/boringcodes/create-service/commit/12ca8d9dfa89c3096c9f6a20a1496c316cb451c0))
+
 ## [1.7.0](https://github.com/boringcodes/create-service/compare/v1.6.0...v1.7.0) (2020-03-28)
 
 
