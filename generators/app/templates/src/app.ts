@@ -16,9 +16,9 @@ const dev = isDev();
 
 // plug middleware
 app.use(morgan(dev ? 'dev' : 'common'));
+app.use(health());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(health());
 
 // plug components
 app.use(components.path, components.routes({ dev }));
