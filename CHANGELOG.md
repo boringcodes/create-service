@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/boringcodes/create-service/compare/v1.8.1...v1.9.0) (2020-08-26)
+
+
+### Features
+
+* **templates:** move app.use(health()) to above bodyParser to imrpove performance of health check api ([6687015](https://github.com/boringcodes/create-service/commit/668701513dd50cbcc553d83bf2fb070cedf91acc))
+* **templates:** move routes.ts to components/index.ts, export components path '/' along with routes, rename Routes interface to RouteOptions ([68e2271](https://github.com/boringcodes/create-service/commit/68e227121e7f4616d450d01074d268a9aaf49f35))
+
+
+### Bug Fixes
+
+* **templates:** update error type to MyError to fix wrong error type problem ([42b2f71](https://github.com/boringcodes/create-service/commit/42b2f71a4df421492859e8587f78bbfb80e0ac38))
+
 ### [1.8.1](https://github.com/boringcodes/create-service/compare/v1.8.0...v1.8.1) (2020-08-26)
 
 
