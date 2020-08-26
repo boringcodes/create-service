@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.10.0](https://github.com/boringcodes/create-service/compare/v1.9.0...v1.10.0) (2020-08-26)
+
+
+### Features
+
+* **templates:** add config file that contains all env vars ([b686dfb](https://github.com/boringcodes/create-service/commit/b686dfbb57a301a9ce27f447db8a5266ab831273))
+
 ## [1.9.0](https://github.com/boringcodes/create-service/compare/v1.8.1...v1.9.0) (2020-08-26)
 
 
