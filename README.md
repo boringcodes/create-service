@@ -75,10 +75,9 @@ This scaffolds out:
 ```
 ├── src
 │   ├── components
-│   │   └── types.ts
+│   │   └── index.ts
 │   ├── app.ts
 │   ├── index.ts
-│   └── routes.ts
 ├── .dockerignore
 ├── .env.example
 ├── .huskyrc
