@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.8.1](https://github.com/boringcodes/create-service/compare/v1.8.0...v1.8.1) (2020-08-26)
+
+
+### Bug Fixes
+
+* **templates:** add source-map-support to deps to fix problem running on production env without devDeps ([eccfc5b](https://github.com/boringcodes/create-service/commit/eccfc5b3058bcb54320f3c7e91a3517dd264149c))
+
 ## [1.8.0](https://github.com/boringcodes/create-service/compare/v1.7.0...v1.8.0) (2020-04-24)
 
 
