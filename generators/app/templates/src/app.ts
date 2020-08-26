@@ -8,7 +8,7 @@ import {
   handleErrors,
 } from '@boringcodes/utils/express';
 
-import routes from './routes';
+import components from './components';
 
 // initialize app
 const app = express();
@@ -20,8 +20,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(health());
 
-// plug routes
-app.use(routes({ dev }));
+// plug components
+app.use(components.path, components.routes({ dev }));
 
 // handle errors
 app.use(handleNotFound);
