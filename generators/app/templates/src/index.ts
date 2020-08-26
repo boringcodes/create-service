@@ -2,25 +2,16 @@ import { MyError } from '@boringcodes/utils/error';
 import errorHandler from '@boringcodes/utils/errorHandler';
 import logger from '@boringcodes/utils/logger';
 
+import config from './config';
 import app from './app';
 
-// declare env vars
-const host =
-  process.env.HOST !== null && process.env.HOST !== undefined
-    ? process.env.HOST
-    : 'localhost';
-const port =
-  process.env.PORT !== null && process.env.PORT !== undefined
-    ? +process.env.PORT
-    : 9000;
-
 // start app
-app.listen(port, host, (err: MyError) => {
+app.listen(config.port, config.host, (err: MyError) => {
   if (err !== null && err !== undefined) {
     throw err;
   }
 
-  logger.info(`> App started at http://${host}:${port}`);
+  logger.info(`> App started at http://${config.host}:${config.port}`);
 });
 
 // handle unhandled promise
