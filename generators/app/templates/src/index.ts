@@ -1,3 +1,4 @@
+import { MyError } from '@boringcodes/utils/error';
 import errorHandler from '@boringcodes/utils/errorHandler';
 import logger from '@boringcodes/utils/logger';
 
@@ -14,7 +15,7 @@ const port =
     : 9000;
 
 // start app
-app.listen(port, host, (err: Error) => {
+app.listen(port, host, (err: MyError) => {
   if (err !== null && err !== undefined) {
     throw err;
   }
@@ -23,11 +24,11 @@ app.listen(port, host, (err: Error) => {
 });
 
 // handle unhandled promise
-process.on('unhandledRejection', (err: Error) => {
+process.on('unhandledRejection', (err: MyError) => {
   throw err;
 });
 
 // handle uncaught error and gracefully shutdown
-process.on('uncaughtException', (err: Error) => {
+process.on('uncaughtException', (err: MyError) => {
   errorHandler.handle(err);
 });
