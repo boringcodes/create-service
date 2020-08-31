@@ -34,13 +34,16 @@
 
 ## Features
 
-- [x] Express
-- [x] [@boringcodes/backpack](https://github.com/boringcodes/backpack) (TypeScript, dotENV)
-- [x] Prettier
-- [x] TSLint (tslint-config-airbnb, tslint-immutable, tslint-sonarts)
-- [x] Husky
-- [x] NVM
-- [x] Dockerfile
+- [x] [Typescript](https://www.typescriptlang.org)
+- [x] [Express.js](https://expressjs.com)
+- [x] [Webpack](https://webpack.js.org) using [@boringcodes/backpack](https://github.com/boringcodes/backpack)
+- [x] [Prettier](https://prettier.io) using [@boringcodes/prettier-config](https://github.com/boringcodes/prettier-config)
+- [x] [ESLint](https://eslint.org) using [@boringcodes/eslint-config-typescript](https://github.com/boringcodes/eslint-config-typescript)
+- [x] [Husky](https://github.com/typicode/husky)
+- [x] [lint-staged](https://github.com/okonet/lint-staged)
+- [x] [NVM](https://github.com/nvm-sh/nvm)
+- [x] [Dockerfile](https://docker.com)
+- [x] [standard-version](https://github.com/conventional-changelog/standard-version)
 
 ## Install
 
@@ -80,11 +83,17 @@ This scaffolds out:
 │   ├── index.ts
 ├── .dockerignore
 ├── .env.example
+├── .eslintrc.js
 ├── .huskyrc
+├── .lintstagedrc
+├── .nvmrc
+├── .prettierrc.js
 ├── Dockerfile
 ├── package.json
-└── tslint.json
+└── tsconfig.json
 ```
+
+To generate component, please use [@boringcodes/create-service-component](https://github.com/boringcodes/create-service-component)
 
 ## Contributing
 
