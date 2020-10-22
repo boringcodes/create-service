@@ -6,11 +6,7 @@ import config from './config';
 import app from './app';
 
 // start app
-app.listen(config.port, config.host, (err: MyError) => {
-  if (err !== null && err !== undefined) {
-    throw err;
-  }
-
+app.listen(config.port, config.host, () => {
   logger.info(`> App started at http://${config.host}:${config.port}`);
 });
 
