@@ -9,7 +9,7 @@ interface RouteOptions {
 
 const path = '/';
 
-const routes = (_: RouteOptions) => {
+const routes = (_: RouteOptions): Router => {
   const router = Router();
 
   // TODO: register components to router
