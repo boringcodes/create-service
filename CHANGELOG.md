@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.11.0](https://github.com/boringcodes/create-service/compare/v1.10.0...v1.11.0) (2021-01-11)
+
+
+### Features
+
+* **generators:** update writing() to copy .env.example .env file ([bda8bec](https://github.com/boringcodes/create-service/commit/bda8becfe89a8798ad3ea24d8a74b681784fa5b6))
+* **templates:** move src/config.ts to src/config/index.ts ([e4406a0](https://github.com/boringcodes/create-service/commit/e4406a095a3d186783e00afc7fcc11452b656a03))
+* **templates:** refactor index.ts app.listen callback as it's changed ([dd9dc66](https://github.com/boringcodes/create-service/commit/dd9dc6682e76c6887db5242d3e04aeb0f0b2033f))
+* **templates:** set all packages version to * in order to install the latest ([c7b0bcc](https://github.com/boringcodes/create-service/commit/c7b0bcc8a220a16ae4b37a4a970245bcf972add9))
+
 ## [1.10.0](https://github.com/boringcodes/create-service/compare/v1.9.0...v1.10.0) (2020-08-26)
 
 
