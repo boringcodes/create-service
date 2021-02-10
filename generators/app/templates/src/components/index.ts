@@ -1,11 +1,8 @@
 import { Router } from 'express';
 
+import { RouteOptions } from './types';
 // TODO: import components
 // import things from './things';
-
-interface RouteOptions {
-  readonly dev: boolean;
-}
 
 const path = '/';
 
@@ -19,4 +16,3 @@ const routes = (_: RouteOptions): Router => {
 };
 
 export default { path, routes };
-export { RouteOptions };
