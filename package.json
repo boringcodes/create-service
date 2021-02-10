@@ -16,7 +16,7 @@
     "format": "prettier --write --ignore-path .gitignore .",
     "format:check": "prettier --check --ignore-path .gitignore .",
     "lint": "eslint --quiet --ignore-path .gitignore --ignore-pattern templates .",
-    "release": "standard-version --no-verify",
+    "release": "standard-version",
     "release:major": "yarn release --release-as major",
     "release:minor": "yarn release --release-as minor",
     "release:patch": "yarn release --release-as patch"
