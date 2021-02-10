@@ -6,66 +6,57 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [1.11.0](https://github.com/boringcodes/create-service/compare/v1.10.0...v1.11.0) (2021-01-11)
 
-
 ### Features
 
-* **generators:** update writing() to copy .env.example .env file ([bda8bec](https://github.com/boringcodes/create-service/commit/bda8becfe89a8798ad3ea24d8a74b681784fa5b6))
-* **templates:** move src/config.ts to src/config/index.ts ([e4406a0](https://github.com/boringcodes/create-service/commit/e4406a095a3d186783e00afc7fcc11452b656a03))
-* **templates:** refactor index.ts app.listen callback as it's changed ([dd9dc66](https://github.com/boringcodes/create-service/commit/dd9dc6682e76c6887db5242d3e04aeb0f0b2033f))
-* **templates:** set all packages version to * in order to install the latest ([c7b0bcc](https://github.com/boringcodes/create-service/commit/c7b0bcc8a220a16ae4b37a4a970245bcf972add9))
+- **generators:** update writing() to copy .env.example .env file ([bda8bec](https://github.com/boringcodes/create-service/commit/bda8becfe89a8798ad3ea24d8a74b681784fa5b6))
+- **templates:** move src/config.ts to src/config/index.ts ([e4406a0](https://github.com/boringcodes/create-service/commit/e4406a095a3d186783e00afc7fcc11452b656a03))
+- **templates:** refactor index.ts app.listen callback as it's changed ([dd9dc66](https://github.com/boringcodes/create-service/commit/dd9dc6682e76c6887db5242d3e04aeb0f0b2033f))
+- **templates:** set all packages version to \* in order to install the latest ([c7b0bcc](https://github.com/boringcodes/create-service/commit/c7b0bcc8a220a16ae4b37a4a970245bcf972add9))
 
 ## [1.10.0](https://github.com/boringcodes/create-service/compare/v1.9.0...v1.10.0) (2020-08-26)
 
-
 ### Features
 
-* **templates:** add config file that contains all env vars ([b686dfb](https://github.com/boringcodes/create-service/commit/b686dfbb57a301a9ce27f447db8a5266ab831273))
+- **templates:** add config file that contains all env vars ([b686dfb](https://github.com/boringcodes/create-service/commit/b686dfbb57a301a9ce27f447db8a5266ab831273))
 
 ## [1.9.0](https://github.com/boringcodes/create-service/compare/v1.8.1...v1.9.0) (2020-08-26)
 
-
 ### Features
 
-* **templates:** move app.use(health()) to above bodyParser to imrpove performance of health check api ([6687015](https://github.com/boringcodes/create-service/commit/668701513dd50cbcc553d83bf2fb070cedf91acc))
-* **templates:** move routes.ts to components/index.ts, export components path '/' along with routes, rename Routes interface to RouteOptions ([68e2271](https://github.com/boringcodes/create-service/commit/68e227121e7f4616d450d01074d268a9aaf49f35))
-
+- **templates:** move app.use(health()) to above bodyParser to imrpove performance of health check api ([6687015](https://github.com/boringcodes/create-service/commit/668701513dd50cbcc553d83bf2fb070cedf91acc))
+- **templates:** move routes.ts to components/index.ts, export components path '/' along with routes, rename Routes interface to RouteOptions ([68e2271](https://github.com/boringcodes/create-service/commit/68e227121e7f4616d450d01074d268a9aaf49f35))
 
 ### Bug Fixes
 
-* **templates:** update error type to MyError to fix wrong error type problem ([42b2f71](https://github.com/boringcodes/create-service/commit/42b2f71a4df421492859e8587f78bbfb80e0ac38))
+- **templates:** update error type to MyError to fix wrong error type problem ([42b2f71](https://github.com/boringcodes/create-service/commit/42b2f71a4df421492859e8587f78bbfb80e0ac38))
 
 ### [1.8.1](https://github.com/boringcodes/create-service/compare/v1.8.0...v1.8.1) (2020-08-26)
 
-
 ### Bug Fixes
 
-* **templates:** add source-map-support to deps to fix problem running on production env without devDeps ([eccfc5b](https://github.com/boringcodes/create-service/commit/eccfc5b3058bcb54320f3c7e91a3517dd264149c))
+- **templates:** add source-map-support to deps to fix problem running on production env without devDeps ([eccfc5b](https://github.com/boringcodes/create-service/commit/eccfc5b3058bcb54320f3c7e91a3517dd264149c))
 
 ## [1.8.0](https://github.com/boringcodes/create-service/compare/v1.7.0...v1.8.0) (2020-04-24)
 
-
 ### Features
 
-* **template:** remove unused .prettierignore ([ccda598](https://github.com/boringcodes/create-service/commit/ccda59860aa2e4cd7f7463c3576fc38c86273b61))
-
+- **template:** remove unused .prettierignore ([ccda598](https://github.com/boringcodes/create-service/commit/ccda59860aa2e4cd7f7463c3576fc38c86273b61))
 
 ### Bug Fixes
 
-* **deps:** mistaken putting change-case to devDeps ([12ca8d9](https://github.com/boringcodes/create-service/commit/12ca8d9dfa89c3096c9f6a20a1496c316cb451c0))
+- **deps:** mistaken putting change-case to devDeps ([12ca8d9](https://github.com/boringcodes/create-service/commit/12ca8d9dfa89c3096c9f6a20a1496c316cb451c0))
 
 ## [1.7.0](https://github.com/boringcodes/create-service/compare/v1.6.0...v1.7.0) (2020-03-28)
 
-
 ### Features
 
-* **template:** replace pretty-quick with lint-staged, add tsconfig.json, fix eslint errors on index file ([301336b](https://github.com/boringcodes/create-service/commit/301336bdb3f278f0ea693331bc8fc8cfeca66c49))
+- **template:** replace pretty-quick with lint-staged, add tsconfig.json, fix eslint errors on index file ([301336b](https://github.com/boringcodes/create-service/commit/301336bdb3f278f0ea693331bc8fc8cfeca66c49))
 
 ## [1.6.0](https://github.com/boringcodes/create-service/compare/v1.5.0...v1.6.0) (2020-03-28)
 
-
 ### Features
 
-* **template:** migrate tslint to eslint using [@typescript-eslint](https://github.com/typescript-eslint) & @boringcodes/eslint-config-typescript ([5477b03](https://github.com/boringcodes/create-service/commit/5477b03d3b291e5b1b738bf1c5099eb085cc552f))
+- **template:** migrate tslint to eslint using [@typescript-eslint](https://github.com/typescript-eslint) & @boringcodes/eslint-config-typescript ([5477b03](https://github.com/boringcodes/create-service/commit/5477b03d3b291e5b1b738bf1c5099eb085cc552f))
 
 ## [1.5.0](https://github.com/boringcodes/create-service/compare/v1.4.0...v1.5.0) (2020-03-26)
 

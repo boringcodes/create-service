@@ -1,3 +1,4 @@
 {
-  "!(**/templates/*).js": ["yarn format", "yarn lint"]
+  "*.{ts,js,json,md,yml}": "yarn format",
+  "!(**/templates/*).js": "yarn lint"
 }

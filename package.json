@@ -13,9 +13,9 @@
   ],
   "scripts": {
     "purge": "rm -rf node_modules",
-    "format": "prettier --write --ignore-path .gitignore **/*.js",
-    "format:check": "prettier --check --ignore-path .gitignore **/*.js",
-    "lint": "eslint --ignore-path .gitignore --ignore-pattern templates **/*.js",
+    "format": "prettier --write --ignore-path .gitignore .",
+    "format:check": "prettier --check --ignore-path .gitignore .",
+    "lint": "eslint --quiet --ignore-path .gitignore --ignore-pattern templates .",
     "release": "standard-version --no-verify",
     "release:major": "yarn release --release-as major",
     "release:minor": "yarn release --release-as minor",
