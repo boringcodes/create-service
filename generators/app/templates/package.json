@@ -14,9 +14,9 @@
     "dev": "backpack dev",
     "prebuild": "yarn clean",
     "build": "backpack build",
-    "start": "NODE_ENV=production node build/index.js",
-    "purge": "rm -rf node_modules",
-    "clean": "rm -rf build",
+    "start": "cross-env NODE_ENV=production node build/index.js",
+    "purge": "rimraf node_modules",
+    "clean": "rimraf build",
     "format": "prettier --write --ignore-path .gitignore .",
     "format:check": "prettier --check --ignore-path .gitignore .",
     "lint": "eslint --quiet --ignore-path .gitignore --ext .ts .",
@@ -28,6 +28,7 @@
   "dependencies": {
     "@boringcodes/utils": "*",
     "body-parser": "*",
+    "cross-env": "*",
     "express": "*",
     "http-status-codes": "*",
     "morgan": "*",
@@ -53,6 +54,7 @@
     "husky": "*",
     "lint-staged": "*",
     "prettier": "*",
+    "rimraf": "*",
     "standard-version": "*",
     "typescript": "*"
   }
