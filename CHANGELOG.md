@@ -2,12 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [1.11.2](https://github.com/boringcodes/create-service/compare/v1.11.1...v1.11.2) (2021-02-10)
+### [1.11.3](https://github.com/boringcodes/create-service/compare/v1.11.2...v1.11.3) (2021-02-10)
 
+### [1.11.2](https://github.com/boringcodes/create-service/compare/v1.11.1...v1.11.2) (2021-02-10)
 
 ### Features
 
-* **lint-staged:** update glob pattern to ignore /templates dir ([657c381](https://github.com/boringcodes/create-service/commit/657c3812bc68032dd783233c2ad73c1888180588))
+- **lint-staged:** update glob pattern to ignore /templates dir ([657c381](https://github.com/boringcodes/create-service/commit/657c3812bc68032dd783233c2ad73c1888180588))
 
 ### [1.11.1](https://github.com/boringcodes/create-service/compare/v1.11.0...v1.11.1) (2021-01-11)
 
