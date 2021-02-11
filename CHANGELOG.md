@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.13.0](https://github.com/boringcodes/create-service/compare/v1.12.1...v1.13.0) (2021-02-11)
+
+### Features
+
+- **generators:** update elementNodeVersion default value to 15 ([80884ab](https://github.com/boringcodes/create-service/commit/80884abef70b847422a3b788ee4c251486ead8b5))
+- **templates:** change base image to boringcodes/dev-runner ([83067c4](https://github.com/boringcodes/create-service/commit/83067c471dbbf9053317d40d119bdd26a9817967))
+- **templates:** update engines.node template to >= instead of fixed version ([3aee382](https://github.com/boringcodes/create-service/commit/3aee3821955ec1526c60ff7fc56c0e9fc9788a8f))
+
 ### [1.12.1](https://github.com/boringcodes/create-service/compare/v1.12.0...v1.12.1) (2021-02-10)
 
 ## [1.12.0](https://github.com/boringcodes/create-service/compare/v1.11.3...v1.12.0) (2021-02-10)
