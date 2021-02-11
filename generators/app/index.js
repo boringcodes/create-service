@@ -51,7 +51,7 @@ module.exports = class extends Generator {
         type: 'input',
         name: 'elementNodeVersion',
         message: 'Supported Node version?',
-        default: 12,
+        default: 15,
       },
     ];
 
