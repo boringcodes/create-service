@@ -10,9 +10,10 @@ import {
 
 import components from './components';
 
-// initialize app
-const app = express();
 const dev = isDev();
+
+// create app
+const app = express();
 
 // plug middleware
 app.use(morgan(dev ? 'dev' : 'common'));
