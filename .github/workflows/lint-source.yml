@@ -4,9 +4,12 @@ on: [push]
 
 jobs:
   lint-source:
+    strategy:
+      matrix:
+        node-version: [10, 12, 14, 15]
     runs-on: ubuntu-latest
-    container:
-      image: node:12-alpine
+    container: boringcodes/dev-runner:node-${{matrix.node-version}}-alpine
+    name: With Node.js ${{matrix.node-version}}
     steps:
       - name: Checkout source
         uses: actions/checkout@v2

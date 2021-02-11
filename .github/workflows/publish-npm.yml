@@ -8,16 +8,14 @@ on:
 jobs:
   publish-npm:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [12]
+    container: boringcodes/dev-runner:node-15-alpine
+    name: With Node.js 15
     steps:
       - name: Checkout source
         uses: actions/checkout@v2
-      - name: Setup Node.js ${{matrix.node-version}}
-        uses: actions/setup-node@v1
+      - name: Config registry
+        uses: actions/setup-node@v2
         with:
-          node-version: ${{matrix.node-version}}
           registry-url: https://registry.npmjs.org
       - name: Publish package
         run: yarn publish --access public
