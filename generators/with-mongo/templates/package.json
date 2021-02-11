@@ -1,0 +1,63 @@
+{
+  "name": "<%= elementName %>",
+  "version": "0.0.0",
+  "description": "<%= elementDescription %>",
+  "homepage": "https://github.com/<%= elementOrganizationName %>/<%= elementName %>",
+  "bugs": "https://github.com/<%= elementOrganizationName %>/<%= elementName %>/issues",
+  "license": "MIT",
+  "author": "<%- elementAuthor %>",
+  "repository": "https://github.com/<%= elementOrganizationName %>/<%= elementName %>.git",
+  "engines": {
+    "node": ">=<%= elementNodeVersion %>"
+  },
+  "scripts": {
+    "dev": "backpack dev",
+    "prebuild": "yarn clean",
+    "build": "backpack build",
+    "start": "cross-env NODE_ENV=production node build/index.js",
+    "purge": "rimraf node_modules",
+    "clean": "rimraf build",
+    "format": "prettier --write --ignore-path .gitignore .",
+    "format:check": "prettier --check --ignore-path .gitignore .",
+    "lint": "eslint --quiet --ignore-path .gitignore --ext .ts .",
+    "release": "standard-version",
+    "release:major": "yarn release --release-as major",
+    "release:minor": "yarn release --release-as minor",
+    "release:patch": "yarn release --release-as patch"
+  },
+  "dependencies": {
+    "@boringcodes/utils": "*",
+    "body-parser": "*",
+    "cross-env": "*",
+    "express": "*",
+    "http-status-codes": "*",
+    "mongoose": "*",
+    "morgan": "*",
+    "source-map-support": "*",
+    "yup": "*"
+  },
+  "devDependencies": {
+    "@boringcodes/backpack": "*",
+    "@boringcodes/eslint-config-typescript": "*",
+    "@boringcodes/prettier-config": "*",
+    "@types/express": "*",
+    "@types/mongoose": "*",
+    "@types/morgan": "*",
+    "@types/yup": "*",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "eslint": "*",
+    "eslint-config-prettier": "*",
+    "eslint-config-standard-with-typescript": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-node": "*",
+    "eslint-plugin-promise": "*",
+    "eslint-plugin-standard": "*",
+    "husky": "*",
+    "lint-staged": "*",
+    "prettier": "*",
+    "rimraf": "*",
+    "standard-version": "*",
+    "typescript": "*"
+  }
+}
