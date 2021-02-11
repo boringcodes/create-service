@@ -1,12 +1,14 @@
-FROM node:<%= elementNodeVersion %>-alpine as builder
-WORKDIR /app
+# Base Image GitHub https://github.com/boringcodes/dev-runner
+# Default WORKDIR /app
+# Default CMD yarn dev
+
+# builder stage
+FROM boringcodes/dev-runner:node-<%= elementNodeVersion %>-alpine as builder
 COPY . .
 RUN yarn && yarn build && yarn purge && yarn --production
 
-FROM node:<%= elementNodeVersion %>-alpine
-RUN apk add --no-cache curl
-WORKDIR /app
+# runner stage
+FROM boringcodes/dev-runner:node-<%= elementNodeVersion %>-alpine
 COPY --from=builder /app/build build
 COPY --from=builder /app/node_modules node_modules
-HEALTHCHECK --interval=30s --timeout=30s --retries=3 CMD curl --fail http://${HOST}:${PORT}/health || exit 1
-CMD ["node", "build/index.js"]
+CMD node build/index.js
