@@ -78,6 +78,9 @@ This scaffolds out:
 ```
 ├── src
 │   ├── components
+│   │   ├── index.ts
+│   │   └── types.ts
+│   ├── config
 │   │   └── index.ts
 │   ├── app.ts
 │   ├── index.ts
