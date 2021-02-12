@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.14.0](https://github.com/boringcodes/create-service/compare/v1.13.0...v1.14.0) (2021-02-12)
+
+### Features
+
+- **generators:** create new app :with-mongo ([c7e2b32](https://github.com/boringcodes/create-service/commit/c7e2b3226b31b4a098cf0b20bf0d8ae8c33d94ee))
+- **templates:** use http module to create http server ([9a90aa9](https://github.com/boringcodes/create-service/commit/9a90aa9c54785a93830f534a8cb7f40d068bc878))
+
 ## [1.13.0](https://github.com/boringcodes/create-service/compare/v1.12.1...v1.13.0) (2021-02-11)
 
 ### Features
