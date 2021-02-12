@@ -8,7 +8,7 @@ import app from './app';
 import config from './config';
 
 // connect mongo
-mongo.connect();
+mongo.connect(); // eslint-disable-line @typescript-eslint/no-floating-promises
 
 // create server
 const server = http.createServer(app);

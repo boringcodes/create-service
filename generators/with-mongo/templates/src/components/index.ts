@@ -9,7 +9,7 @@ const path = '/';
 const routes = (_: RouteOptions): Router => {
   const router = Router();
 
-  // TODO: register components to router
+  // TODO: plug components to router
   // router.use(things.path, things.routes(_));
 
   return router;

@@ -3,26 +3,26 @@ import logger from '@boringcodes/utils/logger';
 
 import config from '../config/mongo';
 
-mongoose.set('bufferCommands', false);
-
-const connect = (): void => {
-  mongoose
-    .connect(config.uri, {
+// connect mongo
+const connect = async (): Promise<void> => {
+  try {
+    await mongoose.connect(config.uri, {
       user: config.user,
       pass: config.password,
-      dbName: config.dbName,
       useUnifiedTopology: true,
       useNewUrlParser: true,
       promiseLibrary: Promise,
-    })
-    .then(() => {
-      logger.info('> Mongo connected');
-    })
-    .catch((err) => {
-      logger.error('> Mongo failed to connect');
-
-      throw err;
     });
+
+    logger.info('> Mongo connected');
+  } catch (err) {
+    logger.error('> Mongo failed to connect');
+
+    throw err;
+  }
 };
 
-export default { connect };
+// create mongo model
+const createModel = mongoose.model;
+
+export default { connect, createModel };
