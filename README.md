@@ -72,8 +72,11 @@ Then navigate to the created directory and run the following command to generate
 ```sh
 $ yo create-service
 
-# or with mongo
+# or :with-mongo
 $ yo create-service:with-mongo
+
+# or :with-postgres
+$ yo create-service:with-postgres
 ```
 
 This scaffolds out:
@@ -85,9 +88,11 @@ This scaffolds out:
 │   │   └── types.ts
 │   ├── config
 │   │   ├── index.ts
-│   │   └── mongo.ts    (:with-mongo)
-│   ├── db              (:with-mongo)
-│   │   └── mongo.ts
+│   │   ├── mongo.ts    (:with-mongo)
+│   │   └── postgres.ts (:with-postgres)
+│   ├── db
+│   │   ├── mongo.ts    (:with-mongo)
+│   │   └── postgres.ts (:with-postgres)
 │   ├── app.ts
 │   ├── index.ts
 ├── .dockerignore
