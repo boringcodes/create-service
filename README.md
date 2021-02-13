@@ -77,6 +77,9 @@ $ yo create-service:with-mongo
 
 # or :with-postgres
 $ yo create-service:with-postgres
+
+# or :with-postgres-typeorm
+$ yo create-service:with-postgres-typeorm
 ```
 
 This scaffolds out:
@@ -89,10 +92,10 @@ This scaffolds out:
 │   ├── config
 │   │   ├── index.ts
 │   │   ├── mongo.ts    (:with-mongo)
-│   │   └── postgres.ts (:with-postgres)
+│   │   └── postgres.ts (:with-postgres or :with-postgres-typeorm)
 │   ├── db
 │   │   ├── mongo.ts    (:with-mongo)
-│   │   └── postgres.ts (:with-postgres)
+│   │   └── postgres.ts (:with-postgres or :with-postgres-typeorm)
 │   ├── app.ts
 │   ├── index.ts
 ├── .dockerignore
