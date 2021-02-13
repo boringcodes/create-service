@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.16.0](https://github.com/boringcodes/create-service/compare/v1.15.0...v1.16.0) (2021-02-13)
+
+### Features
+
+- **generators:** create new app :with-postgres-typeorm ([ceaf2eb](https://github.com/boringcodes/create-service/commit/ceaf2ebc97f6af380602dcce1b4c8432bccc219c))
+- **generators:** update with-mongo & with-postgres' uri config to contain user & password ([967af91](https://github.com/boringcodes/create-service/commit/967af9166900cf7667cd10e41fc00ebb3e330d16))
+
 ## [1.15.0](https://github.com/boringcodes/create-service/compare/v1.14.0...v1.15.0) (2021-02-13)
 
 ### Features
