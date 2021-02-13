@@ -7,8 +7,6 @@ import config from '../config/mongo';
 const connect = async (): Promise<void> => {
   try {
     await mongoose.connect(config.uri, {
-      user: config.user,
-      pass: config.password,
       useUnifiedTopology: true,
       useNewUrlParser: true,
       promiseLibrary: Promise,

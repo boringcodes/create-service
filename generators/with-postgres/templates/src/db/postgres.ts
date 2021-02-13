@@ -10,10 +10,7 @@ import logger from '@boringcodes/utils/logger';
 import config from '../config/postgres';
 
 // create sequelize
-const sequelize = new Sequelize(config.uri, {
-  username: config.user,
-  password: config.password,
-});
+const sequelize = new Sequelize(config.uri);
 
 // connect postgres
 const connect = async (): Promise<void> => {
