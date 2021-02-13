@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.15.0](https://github.com/boringcodes/create-service/compare/v1.14.0...v1.15.0) (2021-02-13)
+
+### Features
+
+- **generators:** create new app with-postgres ([08ed491](https://github.com/boringcodes/create-service/commit/08ed491eb89644dbfe85c0c06b116400dae87bc2))
+
 ## [1.14.0](https://github.com/boringcodes/create-service/compare/v1.13.0...v1.14.0) (2021-02-12)
 
 ### Features
