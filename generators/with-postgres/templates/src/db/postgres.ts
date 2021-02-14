@@ -14,7 +14,7 @@ const connect = async (): Promise<void> => {
     await sequelize.authenticate();
 
     // TODO: register models to connection
-    // sequelize.define(Thing.name, Thing.attributes, Thing.options);
+    // sequelize.define(Thing.name, Thing.schema, Thing.options);
 
     // sync all models
     await sequelize.sync({ force: true });
@@ -28,12 +28,8 @@ const connect = async (): Promise<void> => {
 };
 
 // get model
-const getModel = <T extends Model>({
-  name,
-}: {
-  readonly name: string;
-}): ModelCtor<T> => {
-  return sequelize.models[name] as ModelCtor<T>;
+const getModel = (name: string): ModelCtor<Model> => {
+  return sequelize.models[name];
 };
 
 export default { connect, getModel };
