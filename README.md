@@ -80,6 +80,9 @@ $ yo create-service:with-postgres
 
 # or :with-postgres-typeorm
 $ yo create-service:with-postgres-typeorm
+
+# or :with-postgres-prisma
+$ yo create-service:with-postgres-prisma
 ```
 
 This scaffolds out:
@@ -91,11 +94,12 @@ This scaffolds out:
 │   │   └── types.ts
 │   ├── config
 │   │   ├── index.ts
-│   │   ├── mongo.ts    (:with-mongo)
-│   │   └── postgres.ts (:with-postgres or :with-postgres-typeorm)
+│   │   ├── mongo.ts        (:with-mongo)
+│   │   └── postgres.ts     (:with-postgres/:with-postgres-typeorm)
 │   ├── db
-│   │   ├── mongo.ts    (:with-mongo)
-│   │   └── postgres.ts (:with-postgres or :with-postgres-typeorm)
+│   │   ├── mongo.ts        (:with-mongo)
+│   │   ├── postgres.prisma (:with-postgres-prisma)
+│   │   └── postgres.ts     (:with-postgres/:with-postgres-typeorm/:with-postgres-prisma)
 │   ├── app.ts
 │   ├── index.ts
 ├── .dockerignore
