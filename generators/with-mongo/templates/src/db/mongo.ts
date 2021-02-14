@@ -2,6 +2,8 @@ import mongoose from 'mongoose';
 import logger from '@boringcodes/utils/logger';
 
 import config from '../config/mongo';
+// TODO: import models
+// import Thing from '../components/things/model';
 
 // connect mongo
 const connect = async (): Promise<void> => {
@@ -12,6 +14,9 @@ const connect = async (): Promise<void> => {
       promiseLibrary: Promise,
     });
 
+    // TODO: register models
+    // mongoose.model(Thing.name, Thing.schema);
+
     logger.info('> Mongo connected');
   } catch (err) {
     logger.error('> Mongo failed to connect');
@@ -20,7 +25,4 @@ const connect = async (): Promise<void> => {
   }
 };
 
-// create mongo model
-const createModel = mongoose.model;
-
-export default { connect, createModel };
+export default { connect };
