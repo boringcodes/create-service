@@ -1,13 +1,9 @@
-import {
-  Sequelize,
-  Model,
-  ModelAttributes,
-  ModelOptions,
-  ModelCtor,
-} from 'sequelize';
+import { Model, ModelCtor, Sequelize } from 'sequelize';
 import logger from '@boringcodes/utils/logger';
 
 import config from '../config/postgres';
+// TODO: import models
+// import Thing from '../components/things/model';
 
 // create sequelize
 const sequelize = new Sequelize(config.uri);
@@ -16,6 +12,9 @@ const sequelize = new Sequelize(config.uri);
 const connect = async (): Promise<void> => {
   try {
     await sequelize.authenticate();
+
+    // TODO: register models to connection
+    // sequelize.define(Thing.name, Thing.attributes, Thing.options);
 
     // sync all models
     await sequelize.sync({ force: true });
@@ -28,13 +27,13 @@ const connect = async (): Promise<void> => {
   }
 };
 
-// create postgres model
-const createModel = <T extends Model, M extends ModelCtor<T>>(
-  name: string,
-  schema: ModelAttributes<T>,
-  options?: ModelOptions,
-): M => {
-  return sequelize.define<T>(name, schema, options) as M;
+// get model
+const getModel = <T extends Model>({
+  name,
+}: {
+  readonly name: string;
+}): ModelCtor<T> => {
+  return sequelize.models[name] as ModelCtor<T>;
 };
 
-export default { connect, createModel };
+export default { connect, getModel };
