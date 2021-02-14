@@ -2,8 +2,8 @@ import { createConnection } from 'typeorm';
 import logger from '@boringcodes/utils/logger';
 
 import config from '../config/postgres';
-// TODO: import models
-// import Thing from '../components/things/model';
+// TODO: import schemas
+// import Thing from '../components/things/schema';
 
 // connect postgres
 const connect = async (): Promise<void> => {
@@ -11,7 +11,7 @@ const connect = async (): Promise<void> => {
     await createConnection({
       type: 'postgres',
       url: config.uri,
-      // TODO: register models to connection
+      // TODO: register schemas to connection
       // entities: [Thing],
       synchronize: true,
     });
