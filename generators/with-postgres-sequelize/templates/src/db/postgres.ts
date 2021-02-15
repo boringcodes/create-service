@@ -6,7 +6,7 @@ import config from '../config/postgres';
 // import Thing from '../components/things/model';
 
 // create sequelize
-const sequelize = new Sequelize(config.uri);
+const sequelize = new Sequelize(config.url);
 
 // connect postgres
 const connect = async (): Promise<void> => {

@@ -5,7 +5,7 @@ const user = process.env.POSTGRES_USER ?? '';
 const password = process.env.POSTGRES_PASSWORD ?? '';
 
 const config = {
-  uri:
+  url:
     user === '' || password === ''
       ? `postgres://${host}:${port}/${dbName}`
       : `postgres://${user}:${password}@${host}:${port}/${dbName}`,

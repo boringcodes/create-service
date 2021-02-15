@@ -5,7 +5,7 @@ const user = process.env.MONGO_USER ?? '';
 const password = process.env.MONGO_PASSWORD ?? '';
 
 const config = {
-  uri:
+  url:
     user === '' || password === ''
       ? `mongodb://${host}:${port}/${dbName}`
       : `mongodb://${user}:${password}@${host}:${port}/${dbName}`,

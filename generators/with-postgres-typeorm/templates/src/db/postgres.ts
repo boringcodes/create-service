@@ -10,7 +10,7 @@ const connect = async (): Promise<void> => {
   try {
     await createConnection({
       type: 'postgres',
-      url: config.uri,
+      url: config.url,
       // TODO: register models to connection
       // entities: [Thing],
       synchronize: true,
