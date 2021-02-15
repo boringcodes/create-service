@@ -33,6 +33,7 @@
     "http-status-codes": "*",
     "morgan": "*",
     "pg": "*",
+    "pluralize": "*",
     "sequelize": "*",
     "source-map-support": "*",
     "yup": "*"
@@ -43,6 +44,7 @@
     "@boringcodes/prettier-config": "*",
     "@types/express": "*",
     "@types/morgan": "*",
+    "@types/pluralize": "*",
     "@types/yup": "*",
     "@typescript-eslint/eslint-plugin": "*",
     "@typescript-eslint/parser": "*",

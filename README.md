@@ -75,8 +75,8 @@ $ yo create-service
 # or :with-mongo
 $ yo create-service:with-mongo
 
-# or :with-postgres
-$ yo create-service:with-postgres
+# or :with-postgres-sequelize
+$ yo create-service:with-postgres-sequelize
 
 # or :with-postgres-typeorm
 $ yo create-service:with-postgres-typeorm
@@ -95,11 +95,11 @@ This scaffolds out:
 │   ├── config
 │   │   ├── index.ts
 │   │   ├── mongo.ts        (:with-mongo)
-│   │   └── postgres.ts     (:with-postgres/:with-postgres-typeorm)
+│   │   └── postgres.ts     (:with-postgres-sequelize/:with-postgres-typeorm)
 │   ├── db
 │   │   ├── mongo.ts        (:with-mongo)
 │   │   ├── postgres.prisma (:with-postgres-prisma)
-│   │   └── postgres.ts     (:with-postgres/:with-postgres-typeorm/:with-postgres-prisma)
+│   │   └── postgres.ts     (:with-postgres-sequelize/:with-postgres-typeorm/:with-postgres-prisma)
 │   ├── app.ts
 │   ├── index.ts
 ├── .dockerignore
