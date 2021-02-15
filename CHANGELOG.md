@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.17.0](https://github.com/boringcodes/create-service/compare/v1.16.0...v1.17.0) (2021-02-15)
+
+### Features
+
+- **generators:** create new app :with-postgres-prisma ([72a3ee3](https://github.com/boringcodes/create-service/commit/72a3ee3a04857edc97a5ec5fc6aabf584b9f5bce))
+- **generators:** rename config/mongo.ts & config/postgres.ts uri prop to url ([d1b6c1d](https://github.com/boringcodes/create-service/commit/d1b6c1d49556b8c2690205b8c31406a3f27dcc22))
+- **generators/with-mongo:** add pluralize module ([c5aa6e6](https://github.com/boringcodes/create-service/commit/c5aa6e6d3d2795d8fab79fca4184572b86de5b57))
+- **generators/with-mongo/templates:** import & create models after mongo connected, remove createModel func ([794af57](https://github.com/boringcodes/create-service/commit/794af574b192fb05f108670adc55d535ba64b75e))
+- **generators/with-postgres:** rename with-postgres to with-postgres-sequelize, add pluralize module ([bb5ab07](https://github.com/boringcodes/create-service/commit/bb5ab076c06e5bf3838687fe23d386ce46eb902a))
+- **generators/with-postgres-prisma:** add pluralize module, fix prisma:db-push & :db-seed scripts, add model x db table name mapping ([64f5b14](https://github.com/boringcodes/create-service/commit/64f5b148faac15c88c16079f5feddd6d942c8b50))
+- **generators/with-postgres-typeorm:** add pluralize module ([3a915be](https://github.com/boringcodes/create-service/commit/3a915bea6ca7bf5c92559c9cebd04175b1ff0c0b))
+- **generators/with-postgres/templates:** import & register models after connection created, remove createModel & add getModel funcs ([70372e3](https://github.com/boringcodes/create-service/commit/70372e3eeb26ee5ce9a3ad9eb03a172bf02b617d))
+- **generators/with-postgres/templates:** update models registration & getModel func ([51b5238](https://github.com/boringcodes/create-service/commit/51b5238e4d542ea7f17048514c56a575a6b53ece))
+
 ## [1.16.0](https://github.com/boringcodes/create-service/compare/v1.15.0...v1.16.0) (2021-02-13)
 
 ### Features
