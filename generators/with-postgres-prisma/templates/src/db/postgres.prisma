@@ -8,6 +8,7 @@ generator client {
 }
 
 model Thing {
+  @@map(name: "things")
   id      Int      @id @default(autoincrement())
   name    String?
 }

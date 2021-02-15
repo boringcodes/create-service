@@ -12,8 +12,8 @@
   },
   "scripts": {
     "prisma": "node_modules/.bin/prisma",
-    "prisma:db-push": "yarn prisma:db push --schema src/db/postgres.prisma --preview-feature",
-    "prisma:db-seed": "yarn prisma:db seed --schema src/db/postgres.prisma --preview-feature",
+    "prisma:db-push": "yarn prisma db push --schema src/db/postgres.prisma --preview-feature",
+    "prisma:db-seed": "yarn prisma db seed --schema src/db/postgres.prisma --preview-feature",
     "prisma:generate": "yarn prisma generate --schema src/db/postgres.prisma",
     "prisma:generate-watch": "yarn prisma:generate --watch",
     "postinstall": "yarn prisma:generate",
@@ -39,6 +39,7 @@
     "express": "*",
     "http-status-codes": "*",
     "morgan": "*",
+    "pluralize": "*",
     "source-map-support": "*",
     "yup": "*"
   },
@@ -48,6 +49,7 @@
     "@boringcodes/prettier-config": "*",
     "@types/express": "*",
     "@types/morgan": "*",
+    "@types/pluralize": "*",
     "@types/yup": "*",
     "@typescript-eslint/eslint-plugin": "*",
     "@typescript-eslint/parser": "*",
