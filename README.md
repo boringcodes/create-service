@@ -34,16 +34,23 @@
 
 ## Features
 
-- [x] [Typescript](https://www.typescriptlang.org)
+Generated service includes the following features:
+
 - [x] [Express.js](https://expressjs.com)
-- [x] [Webpack](https://webpack.js.org) using [@boringcodes/backpack](https://github.com/boringcodes/backpack)
+- [x] [MongoDB](https://mongodb.com) ODM using [Mongoose](https://mongoosejs.com)
+- [x] [PostgreSQL](https://www.postgresql.org) ORM using [Sequelize](https://sequelize.org), [TypeORM](https://typeorm.io) & [Prisma](https://www.prisma.io)
+- [x] Code structure inspired by [Node.js Best Practices](https://github.com/goldbergyoni/nodebestpractices) & [Uncle Bob Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+
+Other features:
+
+- [x] [Webpack](https://webpack.js.org) with [Typescript](https://www.typescriptlang.org) using [@boringcodes/backpack](https://github.com/boringcodes/backpack)
 - [x] [Prettier](https://prettier.io) using [@boringcodes/prettier-config](https://github.com/boringcodes/prettier-config)
 - [x] [ESLint](https://eslint.org) using [@boringcodes/eslint-config-typescript](https://github.com/boringcodes/eslint-config-typescript)
 - [x] [Husky](https://github.com/typicode/husky)
-- [x] [lint-staged](https://github.com/okonet/lint-staged)
+- [x] [Lint Staged](https://github.com/okonet/lint-staged)
 - [x] [NVM](https://github.com/nvm-sh/nvm)
 - [x] [Dockerfile](https://docker.com)
-- [x] [standard-version](https://github.com/conventional-changelog/standard-version)
+- [x] [Standard Version](https://github.com/conventional-changelog/standard-version)
 
 ## Install
 
