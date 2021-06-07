@@ -8,8 +8,8 @@ on:
 jobs:
   publish-npm:
     runs-on: ubuntu-latest
-    container: boringcodes/dev-runner:node-15-alpine
-    name: With Node.js 15
+    container: boringcodes/dev-runner:node-16-alpine
+    name: With Node.js 16
     steps:
       - name: Checkout source
         uses: actions/checkout@v2

@@ -6,7 +6,7 @@ jobs:
   lint-source:
     strategy:
       matrix:
-        node-version: [12, 14, 15]
+        node-version: [12, 14, 15, 16]
     runs-on: ubuntu-latest
     container: boringcodes/dev-runner:node-${{matrix.node-version}}-alpine
     name: With Node.js ${{matrix.node-version}}
