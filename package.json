@@ -11,6 +11,9 @@
   "files": [
     "generators"
   ],
+  "engines": {
+    "node": ">=12.10.0"
+  },
   "scripts": {
     "purge": "rimraf node_modules",
     "format": "prettier --write --ignore-path .gitignore .",
@@ -19,31 +22,45 @@
     "release": "standard-version",
     "release:major": "yarn release --release-as major",
     "release:minor": "yarn release --release-as minor",
-    "release:patch": "yarn release --release-as patch"
+    "release:patch": "yarn release --release-as patch",
+    "husky": "husky",
+    "lint-staged": "lint-staged",
+    "commitlint": "commitlint"
   },
   "keywords": [
     "yeoman-generator",
     "create-service"
   ],
   "dependencies": {
-    "chalk": "^4.1.0",
-    "change-case": "^4.1.2",
-    "yeoman-generator": "^4.12.0",
-    "yosay": "^2.0.2"
+    "chalk": "4.1.1",
+    "change-case": "4.1.2",
+    "yeoman-generator": "5.3.0",
+    "yosay": "2.0.2"
   },
   "devDependencies": {
-    "@boringcodes/eslint-config": "^1.2.1",
-    "@boringcodes/prettier-config": "^1.3.1",
-    "eslint": "^7.17.0",
-    "eslint-config-prettier": "^7.1.0",
-    "eslint-config-standard": "^16.0.2",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "husky": "^4.3.7",
-    "lint-staged": "^10.5.3",
-    "prettier": "^2.2.1",
-    "rimraf": "^3.0.2",
-    "standard-version": "^9.1.0"
+    "@boringcodes/eslint-config": "1.2.6",
+    "@boringcodes/prettier-config": "1.3.2",
+    "@commitlint/cli": "12.1.4",
+    "@commitlint/config-conventional": "12.1.4",
+    "eslint": "7.28.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-config-standard": "16.0.3",
+    "eslint-plugin-import": "2.23.4",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "5.1.0",
+    "husky": "6.0.0",
+    "lint-staged": "11.0.0",
+    "prettier": "2.3.1",
+    "rimraf": "3.0.2",
+    "standard-version": "9.3.0"
+  },
+  "lint-staged": {
+    "*.{ts,js,json,md,yml}": "yarn format",
+    "!(**/templates/*).js": "yarn lint"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }
