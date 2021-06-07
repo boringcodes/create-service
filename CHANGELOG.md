@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.19.1](https://github.com/boringcodes/create-service/compare/v1.19.0...v1.19.1) (2021-06-07)
+
+### Features
+
+- **generators:** remove unused .dockerignore in templates ([fd53d33](https://github.com/boringcodes/create-service/commit/fd53d33eb06266281b80d251b73e276305314fe9))
+
 ## [1.19.0](https://github.com/boringcodes/create-service/compare/v1.18.2...v1.19.0) (2021-06-07)
 
 ### Features
