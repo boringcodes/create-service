@@ -48,10 +48,17 @@ module.exports = class extends Generator {
         default: `${gitName} <${gitEmail}>`,
       },
       {
-        type: 'input',
+        type: 'list',
         name: 'elementNodeVersion',
         message: 'Node version?',
-        default: 15,
+        choices: [
+          { name: '10', value: 10 },
+          { name: '12', value: 12 },
+          { name: '14', value: 14 },
+          { name: '15', value: 15 },
+          { name: '16', value: 16 },
+        ],
+        default: 4,
       },
       {
         type: 'list',

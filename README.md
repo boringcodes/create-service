@@ -38,7 +38,7 @@ Generated service includes the following features:
 
 - [x] [Express.js](https://expressjs.com)
 - [x] [MongoDB](https://mongodb.com) ODM using [Mongoose](https://mongoosejs.com)
-- [x] [PostgreSQL](https://www.postgresql.org) ORM using [Sequelize](https://sequelize.org), [TypeORM](https://typeorm.io) & [Prisma](https://www.prisma.io)
+- [x] [PostgreSQL](https://www.postgresql.org) ORM using [Sequelize](https://sequelize.org), [TypeORM](https://typeorm.io) or [Prisma](https://www.prisma.io)
 - [x] Code structure inspired by [Node.js Best Practices](https://github.com/goldbergyoni/nodebestpractices) & [Uncle Bob Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 
 Other features:
@@ -95,6 +95,7 @@ $ yo create-service:with-postgres-prisma
 This scaffolds out:
 
 ```
+├── .husky
 ├── src
 │   ├── components
 │   │   ├── index.ts
@@ -108,20 +109,19 @@ This scaffolds out:
 │   │   ├── postgres.prisma (:with-postgres-prisma)
 │   │   └── postgres.ts     (:with-postgres-sequelize/:with-postgres-typeorm/:with-postgres-prisma)
 │   ├── app.ts
-│   ├── index.ts
+│   └── index.ts
 ├── .dockerignore
 ├── .env.example
-├── .eslintrc.js
-├── .huskyrc
-├── .lintstagedrc
+├── .gitignore
 ├── .nvmrc
-├── .prettierrc.js
 ├── Dockerfile
+├── LICENSE
 ├── package.json
+├── README.md
 └── tsconfig.json
 ```
 
-To generate component, please use [@boringcodes/create-service-component](https://github.com/boringcodes/create-service-component)
+To generate service component with full `CRUD` functions, please use [@boringcodes/create-service-component](https://github.com/boringcodes/create-service-component)
 
 ## Contributing
 
