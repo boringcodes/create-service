@@ -4,11 +4,10 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [1.18.0](https://github.com/boringcodes/create-service/compare/v1.17.0...v1.18.0) (2021-06-07)
 
-
 ### Features
 
-* **generators:** add Package manager to prompt questions, add commitlint to templates ([9a5fcc9](https://github.com/boringcodes/create-service/commit/9a5fcc9cbba0f6ef001af69180933e1016fa40d7))
-* **generators/with-postgres-prisma/templates:** remove unused emitDecoratorMetadata & experimentalDecorators tsconfig ([9f92c02](https://github.com/boringcodes/create-service/commit/9f92c02f8461369b5c7634826afb3830c98496c6))
+- **generators:** add Package manager to prompt questions, add commitlint to templates ([9a5fcc9](https://github.com/boringcodes/create-service/commit/9a5fcc9cbba0f6ef001af69180933e1016fa40d7))
+- **generators/with-postgres-prisma/templates:** remove unused emitDecoratorMetadata & experimentalDecorators tsconfig ([9f92c02](https://github.com/boringcodes/create-service/commit/9f92c02f8461369b5c7634826afb3830c98496c6))
 
 ## [1.17.0](https://github.com/boringcodes/create-service/compare/v1.16.0...v1.17.0) (2021-02-15)
 
