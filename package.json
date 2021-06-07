@@ -54,6 +54,10 @@
     "rimraf": "3.0.2",
     "standard-version": "9.3.0"
   },
+  "prettier": "@boringcodes/prettier-config",
+  "eslintConfig": {
+    "extends": "@boringcodes/eslint-config"
+  },
   "lint-staged": {
     "*.{ts,js,json,md,yml}": "yarn format",
     "!(**/templates/*).js": "yarn lint"

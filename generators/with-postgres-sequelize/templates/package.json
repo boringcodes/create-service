@@ -67,6 +67,10 @@
     "standard-version": "*",
     "typescript": "*"
   },
+  "prettier": "@boringcodes/prettier-config",
+  "eslintConfig": {
+    "extends": "@boringcodes/eslint-config-typescript"
+  },
   "lint-staged": {
     "*.{ts,js,json,md,yml}": "yarn format",
     "*.ts": "yarn lint"
