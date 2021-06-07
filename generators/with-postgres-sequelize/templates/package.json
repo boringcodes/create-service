@@ -23,7 +23,10 @@
     "release": "standard-version",
     "release:major": "yarn release --release-as major",
     "release:minor": "yarn release --release-as minor",
-    "release:patch": "yarn release --release-as patch"
+    "release:patch": "yarn release --release-as patch",
+    "husky": "husky",
+    "lint-staged": "lint-staged",
+    "commitlint": "commitlint"
   },
   "dependencies": {
     "@boringcodes/utils": "*",
@@ -42,6 +45,8 @@
     "@boringcodes/backpack": "*",
     "@boringcodes/eslint-config-typescript": "*",
     "@boringcodes/prettier-config": "*",
+    "@commitlint/cli": "*",
+    "@commitlint/config-conventional": "*",
     "@types/express": "*",
     "@types/morgan": "*",
     "@types/pluralize": "*",
@@ -61,5 +66,14 @@
     "rimraf": "*",
     "standard-version": "*",
     "typescript": "*"
+  },
+  "lint-staged": {
+    "*.{ts,js,json,md,yml}": "yarn format",
+    "*.ts": "yarn lint"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }
