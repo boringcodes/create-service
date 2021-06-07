@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.19.0](https://github.com/boringcodes/create-service/compare/v1.18.2...v1.19.0) (2021-06-07)
+
+### Features
+
+- **generators:** add .gitignore, LICENSE & README.md to templates ([57161cf](https://github.com/boringcodes/create-service/commit/57161cf5098a14f2c9d6ead0de4e983c0f5cce4a))
+
 ### [1.18.2](https://github.com/boringcodes/create-service/compare/v1.18.1...v1.18.2) (2021-06-07)
 
 ### [1.18.1](https://github.com/boringcodes/create-service/compare/v1.18.0...v1.18.1) (2021-06-07)
