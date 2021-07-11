@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.20.0](https://github.com/boringcodes/create-service/compare/v1.19.1...v1.20.0) (2021-07-11)
+
+### Features
+
+- **templates:** update Dockerfile to use boringcodes/prod-builder as builder base image ([159ded0](https://github.com/boringcodes/create-service/commit/159ded0d4ab090a74d69f18ca0009286c920f97e))
+
 ### [1.19.1](https://github.com/boringcodes/create-service/compare/v1.19.0...v1.19.1) (2021-06-07)
 
 ### Features
