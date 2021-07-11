@@ -1,14 +1,16 @@
-# Base Image GitHub https://github.com/boringcodes/dev-runner
-# Default WORKDIR /app
-# Default CMD yarn dev
+# https://github.com/boringcodes/prod-builder
 
-# builder stage
-FROM boringcodes/dev-runner:node-<%= elementNodeVersion %>-alpine as builder
+# build stage
+FROM boringcodes/prod-builder:node-<%= elementNodeVersion %>-alpine as builder
 COPY . .
 RUN yarn && yarn build && yarn purge && yarn --production
 
-# runner stage
-FROM boringcodes/dev-runner:node-<%= elementNodeVersion %>-alpine
+# run stage
+FROM node:<%= elementNodeVersion %>-alpine
+ENV NODE_ENV=production \
+    HOST=0.0.0.0 \
+    PORT=80
+WORKDIR /app
 COPY --from=builder /app/build build
 COPY --from=builder /app/node_modules node_modules
-CMD node build/index.js
+CMD node build
